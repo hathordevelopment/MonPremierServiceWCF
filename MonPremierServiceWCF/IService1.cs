@@ -12,6 +12,8 @@ namespace MonPremierServiceWCF
     [ServiceContract]
     public interface IService1
     {
+        [OperationContract]
+        float GetPrice(string id);
 
         [OperationContract]
         string GetData(int value);
